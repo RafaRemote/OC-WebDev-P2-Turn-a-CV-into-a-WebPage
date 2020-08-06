@@ -134,7 +134,7 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 		width: 100%;
 		padding: 50px;
 		text-align: justify;
-		line-height: 40px;
+		line-height: 20px;
 	}
 	footer {
 		width: 100%;
