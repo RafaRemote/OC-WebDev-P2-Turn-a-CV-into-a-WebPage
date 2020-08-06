@@ -27,7 +27,6 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 		width: 100vw;
 		display: flex;
 		flex-direction: column;
-		border: 2px solid black;
 		
 	}
 	#container_one {  /* contains 2 elements : #photo and header */
