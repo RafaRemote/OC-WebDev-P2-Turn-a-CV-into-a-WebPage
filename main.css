@@ -192,7 +192,7 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 		margin-top: 10px;
 		align-self: center;
 	}
-	#exper > .section_thread {
+	#experiences > .section_thread {
 		margin-top: 30px;
 	}
 	.section_content_p {
@@ -370,13 +370,13 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 		margin-bottom: 0;	
 		padding: 0;
 	}
-	#forma {
+	#formation {
 		height: 440px;
 	}
-	#exper {
+	#experiences {
 		height: 636px;
 	}
-	#recom {
+	#recommandations {
 		height: 328px;
 		padding-top: 20px;
 	}
@@ -389,7 +389,7 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 		margin-left: 60px;
 		margin-bottom: 10px;
 	}
-	#exper > .section_thread {	
+	#experiences > .section_thread {	
 		transform: translateY(-30px);
 	}
 	.section_content_p {
