@@ -37,7 +37,7 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 		
 	}
 	#photo {
-		width: 99w;
+		width: 100%;
 		display: flex;
 		justify-content: center;	
 		align-items: center;
