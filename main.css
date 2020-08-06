@@ -327,7 +327,7 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 		width: 60px;
 		height: 2px;
 		margin: 0;
-		left: 0px;
+		left: 0;
 				
 	}
 	#container_two {
