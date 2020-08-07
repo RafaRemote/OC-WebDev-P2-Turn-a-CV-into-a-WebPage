@@ -3,13 +3,11 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
 body {
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	background-color: #fff;
+	font-size: 16px;
 }
-
-
 /*
 Breakingpoints:
 
@@ -20,7 +18,6 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 
  Foreground #0D5B77 background  #fff => Contrast Ratio: 7.55:1. Pass.
  Foreground #15A2D5 background  #000 => Contrast Ratio : 7.16.1 Pass. 
- 
 
 */
 	#main_container {   /* contains 2 elements : #container_one  and #container_two */
@@ -72,7 +69,7 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 		text-align: center;
 		margin-bottom: 100px;
 	}
-	.thread {
+	.line {
 		width: 50px;
 		height: 2px;
 		border: 2px solid #0D5B77;  
@@ -99,20 +96,23 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 	}
 	.titles { /* Titles class used for address, aside and footer*/
 		width: 100%;
-		height: 40px;
-		padding: 8px;
+		height: 45px;
+		padding: 6px 0 10px 0;
 		background-color: #000;
 		color: #15A2D5; 
 		text-align: center;
 		font-weight: bold;
-		font-size: 24px;
+		font-size: 30px;
 	}	
 	address {
 		width: 100%;
 		font-style: normal;
 	}
+	address> ul {
+		padding: 40px 0 40px 0;
+	}
 	address>ul>li {
-		padding: 20px 0 0 20px;
+		padding: 20px 0 0 30px;
 		list-style: none;
 	
 	}
@@ -122,7 +122,7 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 	}
 	address>ul>li:nth-child(odd) {
 		font-weight: bold;
-		margin-bottom: 4px;
+		margin-bottom: -20px;
 	}
 	address>ul>li:nth-child(even) {
 		margin-bottom: 30px;
@@ -130,9 +130,9 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 	aside {
 		width: 100%;
 	}
-	#text_apropos {
+	#text_a_propos {
 		width: 100%;
-		padding: 50px;
+		padding: 50px 60px 0 40px;
 		text-align: justify;
 		line-height: 20px;
 	}
@@ -143,9 +143,8 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-
 	}
-	#under_footer {
+	#footer_content{
 		width: 100%;
 		padding-top: 45px;
 		display: flex;
@@ -185,14 +184,14 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 		font-weight: bold;
 		justify-content: flex-start;
 	}
-	.section_thread {
+	.section_line{
 		width: 80%;
 		height: 2px;
 		border: 2px solid #0D5B77;
 		margin-top: 10px;
 		align-self: center;
 	}
-	.section_content_p {
+	.section_content {
 		width: 100%;
 		height: 300px;
 		padding-top: 25px;
@@ -201,7 +200,7 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 		justify-content: center;
 		align-items: center;
 	}
-	.section_content_p_left {
+	.section_content_paragraph_left {
 		width: 40%;
 		height: 20px;
 		display: flex;
@@ -210,19 +209,19 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 		padding-top: 10px;
 		padding-left: 20px;
 	}
-	.section_content_p_right {
+	.section_content_paragraph_right {
 		width: 80%;
 		height: 380px;
 		padding-top: 50px;
 		text-align: center;
 	}
-	.section_content_p_right>h4{
+	.section_content_paragraph_right>h4{
 		margin-top: 10px;
 		margin-bottom: 30px;
 		font-size: 24px;
 		text-align: center;
 	}
-	.section_content_p_right>
+	.section_content_paragraph_right>
 	h5 {
 		font-weight: normal;
 		margin-top: 10px;
@@ -230,30 +229,30 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 		font-size: 18px;
 		text-align: center;
 	}
-	.section_sub {
+	.section_content_recommandations {
 		width: 100%;
 		height: 400px;
 		display: flex;
 		flex-direction: column;
 	}
-	.section_nested {
+	.section_content_paragraph_recommandations {
 		margin-top: 30px;
 		height: 250px;
 	}
-	.section_nested>h5 {
+	.section_content_paragraph_recommandations>h5 {
 		font-size: 24px;
 		padding-bottom: 40px;
 		padding-left: 20px;
 	}
-	.section_nested>ul>li {
+	.section_content_paragraph_recommandations>ul>li {
 		margin-bottom: 40px;
 		padding-left: 20px;
 		font-weight: bold;
 	}
-	.section_nested > ul>li:nth-child(3n){
+	.section_content_paragraph_recommandations> ul>li:nth-child(3n){
 		font-weight: normal;
 		}
-	.section_nested>ul {
+	.section_content_paragraph_recommandations>ul {
 		margin-bottom: 30px;
 		list-style: none;
 	}
@@ -287,12 +286,10 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 
 @media only screen and (min-width: 768px) {
 	
-	#container_one {
-		
+	#container_one {	
 		height: 280px;	
 		flex-direction: row;
 	}
-
 	#photo {
 		width: 32vw;
 		height: 280px;
@@ -311,21 +308,17 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 	}
 	header>h1 {
 		font-size: 50px;
-		
-		
 	}
 	header>h2 {
 		font-size: 24px;
 		padding-top: 15px;
 		text-align:left;
 	}
-		
-	.thread {
+	.line {
 		width: 60px;
 		height: 2px;
 		margin: 0;
-		left: 0;
-				
+		left: 0;			
 	}
 	#container_two {
 		width: 100vw;
@@ -333,17 +326,18 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 		display: flex;
 		flex-direction: row;
 	}
-
-	#container_address_aside_footer {  /* contains 3 elements : address, aside andfooter */
+	#container_address_aside_footer {  /* contains 3 elements : address, aside and footer */
 		width: 32vw;
 	}
 	address {
 		height: 392px;
 	}
+	address>ul {
+		padding: 10px 0 25px 0;
+	}
 	address>ul>li {
-		padding: 25px 0 0 40px;
+		padding: 20px 0 0 40px;
 		list-style: none;
-		line-height: 0;
 	}
 	address>ul>li:nth-child(even) {
 		margin-bottom: 5px;
@@ -351,10 +345,13 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 	aside {
 		height: 828px;
 	}
+	#text_a_propos {
+		line-height: 35px;
+	}
 	footer {
 		height: 184px;
 	}
-	#under_footer {
+	#footer_content {
 		padding-top: 20px;
 	}
 	main {
@@ -380,60 +377,57 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 	.section_title {
 		margin-top: 0;
 	}
-	.section_thread {
+	.section_line {
 		width: 80%;
 		height: 1px;
-		margin-left: 60px;
-		
+		margin-left: 60px;	
 	}
-
-	.section_content_p {
+	.section_content {
 		width: 100%;
 		height: 180px;
 		padding-top: 40px;
 		flex-direction: row;
 	}
-	.section_content_p_left {
+	.section_content_paragraph_left {
 		width: 30%;
 		height: auto;
 		margin-top: 0;
 		font-weight: bold;
 		align-self: flex-start;
 	}	
-	.section_content_p_right {
+	.section_content_paragraph_right {
 		width: 50%;
 		height: 200px;
 		padding-left: 10px;
 		text-align: left;
 		padding-top: 0;
 	}
-	.section_content_p_right> h4 {
+	.section_content_paragraph_right> h4 {
 		margin-top: 0;
 		margin-bottom: 0;
 		text-align: left;
 	}
-	.section_content_p_right> h5 {
+	.section_content_paragraph_right> h5 {
 		margin-top: 0;
 		margin-bottom: 20px;
 		text-align: left;
 	}
-
-	.section_sub {
+	.section_content_recommandations {
 		width: 100%;
 		height: 150px;
 		display: flex;
 		flex-direction: row;		
 	}
-	.section_nested {
+	.section_content_paragraph_recommandations{
 		height: 150px;
 		padding-left: 40px;
 		padding-top: 20px;
 	}
-	.section_nested > h5 {
+	.section_content_paragraph_recommandations > h5 {
 		padding-left: 20px;
 		font-size: 20px;
 	}
-	.section_nested > ul > li{
+	.section_content_paragraph_recommandations > ul > li{
 	transform: translateX(0);
 	margin-bottom: 20px;
 	}
@@ -450,5 +444,7 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 		padding-right: 20px;
 	}
 
+	/*end of icon rules*/
+
 }
-	/*end icon rules*/
+
