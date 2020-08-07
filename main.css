@@ -230,7 +230,6 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 	}
 	.section_content_recommandations {
 		width: 100%;
-		height: 400px;
 		display: flex;
 		flex-direction: column;
 	}
@@ -377,7 +376,7 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 		margin-top: 0;
 	}
 	.section_line {
-		width: 80%;
+		width: 90%;
 		height: 1px;
 		margin-left: 60px;	
 	}
@@ -386,6 +385,7 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 		height: 180px;
 		padding-top: 100px;
 		flex-direction: row;
+		justify-content: space-evenly;
 	}
 	.section_content_paragraph_left {
 		width: 30%;
@@ -395,7 +395,7 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 		align-self: flex-start;
 	}	
 	.section_content_paragraph_right {
-		width: 50%;
+		width: 55%;
 		height: 200px;
 		padding-left: 10px;
 		text-align: left;
@@ -415,20 +415,22 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 		width: 100%;
 		height: 150px;
 		display: flex;
-		flex-direction: row;		
+		flex-direction: row;
+		justify-content: space-evenly
+;
 	}
 	.section_content_paragraph_recommandations{
+		width: 40%;
 		height: 150px;
-		padding-left: 40px;
-		padding-top: 20px;
+		padding-top: 0;
 	}
 	.section_content_paragraph_recommandations > h5 {
 		padding-left: 20px;
 		font-size: 20px;
 	}
 	.section_content_paragraph_recommandations > ul > li{
-	transform: translateX(0);
-	margin-bottom: 20px;
+		transform: translateX(0);
+		margin-bottom: 15px;
 	}
 
 	/* all icons rules*/	
@@ -437,7 +439,8 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 		padding-left: 60px;
 	}
 	.fa-dot-circle {			
-		padding-right: 20px;
+		padding-right: 15px;
+		padding-left: 5px;
 	}
 	.fa-circle {			
 		padding-right: 20px;
