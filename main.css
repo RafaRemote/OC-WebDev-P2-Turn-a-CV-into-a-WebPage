@@ -385,14 +385,15 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 		height: 180px;
 		padding-top: 100px;
 		flex-direction: row;
-		justify-content: space-evenly;
+		justify-content: space-evenly;		
 	}
 	.section_content_paragraph_left {
 		width: 30%;
 		height: auto;
-		margin-top: 0;
 		font-weight: bold;
-		align-self: flex-start;
+		align-self: flex-end;
+		align-items: center;
+		margin-bottom: 100px;
 	}	
 	.section_content_paragraph_right {
 		width: 55%;
@@ -441,9 +442,11 @@ Color ratios are meeting WCAG recommandations: color ratios are all > 4.5:1. (fo
 	.fa-dot-circle {			
 		padding-right: 15px;
 		padding-left: 5px;
+		padding-bottom: 15px;
 	}
 	.fa-circle {			
 		padding-right: 20px;
+		padding-bottom: 15px;
 	}
 
 	/*end of icon rules*/
